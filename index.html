@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Portfolio | Jesper R. Krüger</title>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="Frontend portfolio for Jesper R. Krüger"
+    />
+    <meta name="author" content="Jesper Ring Krüger" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/5ba7ce5626.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="shortcut icon" type="image/png" href="" />
+  </head>
+
+  <body>
+    <!-------------- Navigation -------------->
+    <header>
+      <nav>
+        <div class="burger" onclick="toggleMenu()">
+          <div class="line line1"></div>
+          <div class="line line2"></div>
+          <div class="line line3"></div>
+        </div>
+        <ul class="nav-list">
+          <a class="nav-link" href="#/"><li class="nav-item">Forside</li></a>
+          <a class="nav-link" href="#/about"><li class="nav-item">Om mig</li></a>
+          <a class="nav-link" href="#/skills"><li class="nav-item">Mine evner</li></a>
+          <a class="nav-link" href="#/projects"><li class="nav-item">Projekter</li></a>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="appRoot">
+      <!-------------- Pages -------------->
+      <!-- home page -->
+      <section id="home" class="profil-section page">
+        <img
+        src="images/profilpic.png"
+        class="profil-pic"
+        alt="profile picture"
+      />
+      <h1 class="index-title">Velkommen.</h1>
+      <p class="age">
+        Mit navn er <strong></strong>Jesper.</strong><br />
+        Jeg er multimediedesign studerende med en passion for frontend
+        udvikling og kodning.
+      </p>
+      <a href="#/about"
+        ><button class="read-more-btn">Læs mere</button></a
+      >
+      </section>
+
+      <!-- about page -->
+      <section id="about" class="page">
+        <header class="topbar">
+          <h2>Om mig</h2>
+        </header>
+        <p class="age"></p>
+      </section>
+
+      <!-- contact page -->
+      <section id="skills" class="page">
+        <header class="topbar">
+          <h2>Mine evner</h2>
+        </header>
+        <p>Contact page. Here goes some content.</p>
+      </section>
+
+      <!-- posts page -->
+      <section id="projects" class="page">
+        <header class="topbar">
+          <h2>Projekter</h2>
+        </header>
+        <p>This is a post page</p>
+      </section>
+    </main>
+    <footer>
+        <h2 class="contact-title">Kontakt mig</h2>
+        <section class="icon-section">
+          <a href="https://www.linkedin.com/in/jesper-ring-kr%C3%BCger-9539631b5/" target="_blank"<i class="fab fa-linkedin"></i></a>
+          <a href="tel:+4524663536"><i class="fas fa-phone-square-alt"></i></a>
+          <a href="mailto:kruger89@hotmail.com"
+            ><i class="fas fa-envelope-square"></i
+          ></a>
+        </section>
+      </footer>
+    <script src="./js/app.js" type="module"></script>
+  </body>
+</html>

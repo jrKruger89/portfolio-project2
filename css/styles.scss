@@ -1,0 +1,228 @@
+/*----- Sass Variables -----*/
+$primary-color: #202020;
+$secondary-color: #171717;
+$contrast-color: #da0037;
+$header-color: #d2d2d2;
+$text-color: #949494;
+$primary-font: "Roboto", sans-serif;
+
+/* ---------- general styling ---------- */
+html,
+body {
+  color: $header-color;
+  font-family: $primary-font;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: $header-color;
+  font-size: 2.5em;
+}
+
+h2 {
+  color: $header-color;
+}
+
+p {
+  color: $text-color;
+  font-size: 1.4em;
+}
+
+button {
+  background-color: $contrast-color;
+  border-radius: 18px;
+  border: 1px solid $contrast-color;
+  color: $header-color;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*----- Burger -----*/
+.burger {
+  width: 40px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 15px;
+  cursor: pointer;
+}
+
+.line {
+  background-color: $contrast-color;
+  height: 4px;
+  width: 40px;
+  border-radius: 15px;
+  transition: 0.4s;
+}
+
+.line2 {
+  margin: 10px 0 10px 0;
+}
+
+/* Rotate first bar */
+.open .line1 {
+  transform: rotate(-45deg) translate(-10px, 10px);
+  background-color: $header-color;
+}
+
+/* Fade out the second bar */
+.open .line2 {
+  width: 0px;
+  transform: translateX(-75px);
+  background-color: $header-color;
+}
+
+/* Rotate last bar */
+.open .line3 {
+  transform: rotate(45deg) translate(-10px, -10px);
+  background-color: $header-color;
+}
+
+/*----- Nav Styling -----*/
+nav {
+  background-color: $secondary-color;
+  height: 60px;
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  width: 100%;
+}
+
+.nav-list {
+  margin: 0;
+  padding: 20px;
+  background-color: $secondary-color;
+  list-style: none;
+  position: absolute;
+  z-index: 5;
+  transition: all 0.4s;
+  top: 60px;
+  left: -220px;
+  min-height: 100vh;
+}
+
+/* Style the links inside the navigation bar */
+.nav-link {
+  color: $contrast-color;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  margin: 0 0 30px 0;
+  font-weight: 600;
+  text-align: left;
+}
+
+.nav-link li {
+  margin: 0 0 30px 0;
+}
+
+/* Add a color to the active/current link */
+.active {
+  color: $header-color;
+  border-bottom: $header-color 2px solid;
+}
+
+/* ---------- topbar styling ---------- */
+.topbar {
+  background-color: var(--green);
+  color: var(--text-color-light);
+  padding: 13.5px;
+  text-transform: uppercase;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+/* ---------- main styling ---------- */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  transition: 0.4s;
+  background: $primary-color;
+}
+
+.blur {
+  filter: blur(5px);
+}
+
+/*----- Index Page -----*/
+.profil-section {
+  width: 252px;
+  margin: 150px 0 0 0;
+  display: grid;
+}
+
+.profil-pic {
+  height: 250px;
+  width: 250px;
+  border: 1px solid $text-color;
+  border-radius: 50%;
+}
+
+.index-title {
+  margin: 15px 0;
+}
+
+.index-text {
+  margin: 0;
+}
+
+.read-more-btn {
+  height: 40px;
+  width: 110px;
+  margin: 20px 0 120px 0;
+}
+
+/* ---------- page styling ---------- */
+.page {
+  display: block;
+  background: $primary-color;
+  animation: fadeIn 0.4s;
+  max-height: 100vh;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $secondary-color;
+  height: 150px;
+  transition: 0.4s;
+}
+
+.contact-title {
+  text-align: center;
+  margin: 0 0 15px 0;
+}
+
+.icon-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 150px;
+  height: 50px;
+  background-color: $contrast-color;
+  border-radius: 10px;
+  border: 1px solid $contrast-color;
+  padding: 0 8px 0 8px;
+}
+
+.fab,
+.fas {
+  font-size: 2.5em;
+  background-color: $contrast-color;
+  color: $header-color;
+}
