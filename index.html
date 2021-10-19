@@ -23,7 +23,6 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="shortcut icon" type="image/png" href="" />
   </head>
 
   <body>
@@ -45,6 +44,7 @@
     </header>
 
     <main id="appRoot">
+      <h1 class="page-title">Jesper Ring Krüger</h1>
       <!-------------- Pages -------------->
       <!-- home page -->
       <section id="home" class="profil-section page">
@@ -53,9 +53,9 @@
         class="profil-pic"
         alt="profile picture"
       />
-      <h1 class="index-title">Velkommen.</h1>
-      <p class="age">
-        Mit navn er <strong></strong>Jesper.</strong><br />
+      <h2 class="index-title">Velkommen.</h2>
+      <p class="index-text">
+        Mit navn er <b>Jesper</b>.<br/>
         Jeg er multimediedesign studerende med en passion for frontend
         udvikling og kodning.
       </p>
@@ -65,31 +65,46 @@
       </section>
 
       <!-- about page -->
-      <section id="about" class="page">
-        <header class="topbar">
-          <h2>Om mig</h2>
-        </header>
-        <p class="age"></p>
+      <section id="about" class="about-section page">
+          <h2 class="about-title">Hvem er jeg?</h2>
+        <p class="about-text"></p>
       </section>
 
       <!-- contact page -->
-      <section id="skills" class="page">
-        <header class="topbar">
-          <h2>Mine evner</h2>
-        </header>
-        <p>Contact page. Here goes some content.</p>
+      <section id="skills" class="skills-section page">
+          <h2 class="skills-title">Hvad kan jeg?</h2>
+          <p class="skills-text">
+            I min tid som studerende har jeg
+            opbygget kompetencer inden for design
+            og udvikling af digitale brugergrænseflader.
+            Jeg har fået praktisk erfaring inden for 
+            UX research metoder og lært hordan den indsamlede
+            data omdannes til et brugervenligt design.
+            <br><br>
+            Vi har i løbet af studiet arbejdet med HTML5, CSS3
+            og JavaScript til opbygning af vores digitale produkter.
+            Denne del af processen er hvad jeg brænder for og også
+            hvorfor jeg valgte frontend udvikler linien på 3. semester.
+            Jeg elsker at lære og er ikke bange for skulle arbejde med
+            teknologier jeg ikke har benyttet før.
+            <br><br>
+            Jeg har erfaring med flere af Adobe's programmer.
+            For eksempel udvikling af interaktive prototyper
+            i XD og billedredigering i Photoshop.
+            <br><br>
+            På knappen her under kan du hente mit CV.
+          </p>
+          <a href="resources/CV.docx" download ><button class="download-btn">Download CV</button></a>
       </section>
 
       <!-- posts page -->
-      <section id="projects" class="page">
-        <header class="topbar">
-          <h2>Projekter</h2>
-        </header>
-        <p>This is a post page</p>
+      <section id="projects" class="projects-section page">
+          <h2 class="projects-title">Projekter</h2>
+        <p class="projects-text"></p>
       </section>
     </main>
     <footer>
-        <h2 class="contact-title">Kontakt mig</h2>
+        <h3 class="contact-title">Kontakt mig</h3>
         <section class="icon-section">
           <a href="https://www.linkedin.com/in/jesper-ring-kr%C3%BCger-9539631b5/" target="_blank"<i class="fab fa-linkedin"></i></a>
           <a href="tel:+4524663536"><i class="fas fa-phone-square-alt"></i></a>

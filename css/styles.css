@@ -4,24 +4,22 @@ html,
 body {
   color: #d2d2d2;
   font-family: "Roboto", sans-serif;
+  background: #202020;
   height: 100%;
   width: 100%;
   margin: 0;
   padding: 0;
 }
 
-h1 {
+h2 {
   color: #d2d2d2;
   font-size: 2.5em;
 }
 
-h2 {
-  color: #d2d2d2;
-}
-
 p {
   color: #949494;
-  font-size: 1.4em;
+  font-size: 1.3em;
+  margin: 0;
 }
 
 button {
@@ -50,7 +48,7 @@ a {
 
 .line {
   background-color: #da0037;
-  height: 4px;
+  height: 3px;
   width: 40px;
   border-radius: 15px;
   -webkit-transition: 0.4s;
@@ -63,8 +61,8 @@ a {
 
 /* Rotate first bar */
 .open .line1 {
-  -webkit-transform: rotate(-45deg) translate(-10px, 10px);
-          transform: rotate(-45deg) translate(-10px, 10px);
+  -webkit-transform: rotate(-45deg) translate(-9px, 10px);
+          transform: rotate(-45deg) translate(-9px, 10px);
   background-color: #d2d2d2;
 }
 
@@ -78,8 +76,8 @@ a {
 
 /* Rotate last bar */
 .open .line3 {
-  -webkit-transform: rotate(45deg) translate(-10px, -10px);
-          transform: rotate(45deg) translate(-10px, -10px);
+  -webkit-transform: rotate(45deg) translate(-9px, -9px);
+          transform: rotate(45deg) translate(-9px, -9px);
   background-color: #d2d2d2;
 }
 
@@ -128,19 +126,6 @@ nav {
   border-bottom: #d2d2d2 2px solid;
 }
 
-/* ---------- topbar styling ---------- */
-.topbar {
-  background-color: var(--green);
-  color: var(--text-color-light);
-  padding: 13.5px;
-  text-transform: uppercase;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 9999;
-}
-
 /* ---------- main styling ---------- */
 main {
   display: -webkit-box;
@@ -167,25 +152,28 @@ main {
 
 /*----- Index Page -----*/
 .profil-section {
-  width: 252px;
-  margin: 150px 0 0 0;
+  margin: 140px 0 0 0;
+  width: 300px;
   display: -ms-grid;
   display: grid;
 }
 
 .profil-pic {
-  height: 250px;
-  width: 250px;
-  border: 1px solid #949494;
+  height: 300px;
+  width: 300px;
   border-radius: 50%;
 }
 
 .index-title {
   margin: 15px 0;
+  background-image: url(../images/backgr-texture2.png);
+  background-size: contain;
+  text-align: center;
 }
 
 .index-text {
-  margin: 0;
+  font-weight: 100;
+  letter-spacing: 0.05em;
 }
 
 .read-more-btn {
@@ -194,15 +182,71 @@ main {
   margin: 20px 0 120px 0;
 }
 
+/* ---------- about styling ---------- */
+.about-section {
+  margin: 140px 0 0 0;
+  width: 300px;
+}
+
+.about-title {
+  background-image: url(../images/backgr-texture3.png);
+  background-size: contain;
+  text-align: center;
+  margin: 0 0 20px 0;
+  padding-bottom: 2px;
+}
+
+.about-text {
+  margin: 0 0 100px 0;
+}
+
+/* ---------- skills styling ---------- */
+.skills-section {
+  margin: 140px 0 0 0;
+  width: 300px;
+}
+
+.skills-title {
+  background-image: url(../images/backgr-texture4.png);
+  background-size: contain;
+  text-align: center;
+  margin: 0 0 20px 0;
+  padding-bottom: 2px;
+}
+
+.download-btn {
+  height: 40px;
+  width: 145px;
+  margin: 20px 0 120px 0;
+}
+
+/* ---------- skills styling ---------- */
+.projects-section {
+  margin: 140px 0 0 0;
+  width: 300px;
+}
+
+.projects-title {
+  background-image: url(../images/backgr-texture.png);
+  background-size: contain;
+  text-align: center;
+  margin: 0 0 20px 0;
+  padding-bottom: 2px;
+}
+
 /* ---------- page styling ---------- */
 .page {
   display: block;
-  background: #202020;
   -webkit-animation: fadeIn 0.4s;
           animation: fadeIn 0.4s;
-  max-height: 100vh;
+  min-height: calc(100vh - 60px);
 }
 
+.page-title {
+  display: none;
+}
+
+/* ---------- footer styling ---------- */
 footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -226,6 +270,7 @@ footer {
 .contact-title {
   text-align: center;
   margin: 0 0 15px 0;
+  letter-spacing: 0.08em;
 }
 
 .icon-section {
@@ -248,7 +293,7 @@ footer {
 
 .fab,
 .fas {
-  font-size: 2.5em;
+  font-size: 2em;
   background-color: #da0037;
   color: #d2d2d2;
 }
