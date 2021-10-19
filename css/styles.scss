@@ -21,11 +21,18 @@ body {
 h2 {
   color: $header-color;
   font-size: 2.5em;
+  letter-spacing: 0.04em;
+}
+
+h3 {
+  font-size: 1.4em;
+  letter-spacing: 0.04em;
 }
 
 p {
-  color: $text-color;
+  color: $header-color;
   font-size: 1.3em;
+  font-weight: 200;
   margin: 0;
 }
 
@@ -135,7 +142,6 @@ main {
   position: relative;
   z-index: 1;
   transition: 0.4s;
-  background: $primary-color;
 }
 
 .blur {
@@ -207,7 +213,7 @@ main {
 
 .download-btn {
   height: 40px;
-  width: 145px;
+  width: 125px;
   margin: 20px 0 120px 0;
 }
 
@@ -221,15 +227,35 @@ main {
   background-image: url(../images/backgr-texture.png);
   background-size: contain;
   text-align: center;
-  margin: 0 0 20px 0;
+  margin: 0 0 40px 0;
   padding-bottom: 2px;
+}
+
+.projects-figure {
+  margin: 40px 0 0 0;
+  border: 1px solid $contrast-color;
+  background: $contrast-color;
+  display: flex;
+  flex-direction: column;
+}
+
+.projects-img {
+  width: 100%;
+}
+
+.github-figure {
+  margin: 40px 0 80px 0;
+}
+
+figcaption {
+  color: $header-color;
+  padding: 5px 5px;
 }
 
 /* ---------- page styling ---------- */
 .page {
   display: block;
   animation: fadeIn 0.4s;
-  min-height: calc(100vh - 60px);
 }
 
 .page-title {
@@ -253,6 +279,10 @@ footer {
   letter-spacing: 0.08em;
 }
 
+.link-section {
+  display: none;
+}
+
 .icon-section {
   display: flex;
   justify-content: space-between;
@@ -270,4 +300,169 @@ footer {
   font-size: 2em;
   background-color: $contrast-color;
   color: $header-color;
+}
+
+.fa-download {
+  font-size: 1em;
+}
+
+/*----- Ipad media query -----*/
+@media only screen and (min-device-width: 768px) {
+  h2 {
+    font-size: 3.5em;
+  }
+
+  h3 {
+    font-size: 1.4em;
+  }
+
+  p {
+    font-size: 1.3em;
+    margin: 0;
+  }
+
+  button {
+    border-radius: 20px;
+    font-size: 1.3em;
+  }
+
+  /*----- Index -----*/
+  .profil-pic {
+    height: 400px;
+    width: 400px;
+  }
+
+  .read-more-btn {
+    height: 50px;
+    width: 130px;
+  }
+
+  /*----- About -----*/
+  .about-text {
+    margin: 0 0 150px 0;
+  }
+
+  /*----- Projects -----*/
+
+  .whitespace {
+    height: 180px;
+  }
+
+  .page {
+    width: 400px;
+    margin: 0;
+  }
+
+  /* ---------- footer styling ---------- */
+  footer {
+    height: 200px;
+  }
+
+  .link-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8px 0 8px;
+  }
+
+  .link-section a {
+    font-size: 1.4em;
+    font-weight: 600;
+    color: $contrast-color;
+    text-transform: uppercase;
+    margin: 0 20px 0 20px;
+  }
+
+  .icon-section {
+    display: none;
+  }
+}
+
+/*----- Desktop media query -----*/
+@media only screen and (min-device-width: 1024px) {
+  h2 {
+    font-size: 4.5em;
+  }
+
+  h3 {
+    font-size: 1.8em;
+  }
+
+  p {
+    font-size: 1.4em;
+    margin: 0;
+  }
+
+  button {
+    border-radius: 20px;
+    font-size: 1.3em;
+  }
+
+  main {
+    display: flex;
+    margin: 0 auto;
+    background: $primary-color;
+    height: calc(100vh - 0);
+  }
+
+  /*----- Burger -----*/
+  .burger {
+    display: none;
+  }
+
+  /*----- Nav Styling -----*/
+
+  nav {
+    width: 100%;
+  }
+
+  .nav-list {
+    position: static;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 60px;
+    width: 600px;
+    padding: 0;
+    margin: 0 auto;
+    background-color: $secondary-color;
+    list-style: none;
+    z-index: 1;
+  }
+
+  /* Style the links inside the navigation bar */
+  .nav-link {
+    color: $contrast-color;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin: 0;
+    font-weight: 400;
+    text-align: left;
+  }
+
+  .nav-link li {
+    margin: 0;
+  }
+
+  .page {
+    width: 600px;
+  }
+
+  /*----- Index -----*/
+
+  .profil-pic {
+    height: 450px;
+    width: 450px;
+  }
+
+  .pic-div {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* ---------- about styling ---------- */
+  .about-section {
+    margin: 0 0 50px 0;
+  }
 }

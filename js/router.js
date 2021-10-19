@@ -35,6 +35,8 @@ function navigateTo(path) {
 function showPage(path) {
   hideAllPages(); // hide all pages
   document.querySelector(`#${_routes[path]}`).style.display = "block"; // show page by given path
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
   setActiveTab(path);
 }
 

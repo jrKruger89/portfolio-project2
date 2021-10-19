@@ -10,16 +10,18 @@ const main = document.querySelector("main");
 const footer = document.querySelector("footer");
 
 let toggleMenu = () => {
-  burger.classList.toggle("open");
+  if (window.screen.width < 1024) {
+    burger.classList.toggle("open");
 
-  if (burger.classList.contains("open")) {
-    navlist.style.left = "0px";
-    main.classList.add("blur");
-    footer.classList.add("blur");
-  } else {
-    navlist.style.left = "-220px";
-    main.classList.remove("blur");
-    footer.classList.remove("blur");
+    if (burger.classList.contains("open")) {
+      navlist.style.left = "0px";
+      main.classList.add("blur");
+      footer.classList.add("blur");
+    } else {
+      navlist.style.left = "-220px";
+      main.classList.remove("blur");
+      footer.classList.remove("blur");
+    }
   }
 };
 

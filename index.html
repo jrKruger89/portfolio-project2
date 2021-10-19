@@ -48,11 +48,14 @@
       <!-------------- Pages -------------->
       <!-- home page -->
       <section id="home" class="profil-section page">
+        <div class="whitespace"></div>
+        <div class="pic-div">
         <img
         src="images/profilpic.png"
         class="profil-pic"
         alt="profile picture"
       />
+    </div>
       <h2 class="index-title">Velkommen.</h2>
       <p class="index-text">
         Mit navn er <b>Jesper</b>.<br/>
@@ -66,12 +69,14 @@
 
       <!-- about page -->
       <section id="about" class="about-section page">
+        <div class="whitespace"></div>
           <h2 class="about-title">Hvem er jeg?</h2>
         <p class="about-text"></p>
       </section>
 
       <!-- contact page -->
       <section id="skills" class="skills-section page">
+        <div class="whitespace"></div>
           <h2 class="skills-title">Hvad kan jeg?</h2>
           <p class="skills-text">
             I min tid som studerende har jeg
@@ -94,13 +99,24 @@
             <br><br>
             På knappen her under kan du hente mit CV.
           </p>
-          <a href="resources/CV.docx" download ><button class="download-btn">Download CV</button></a>
+          <a href="resources/CV.docx" download ><button class="download-btn">CV <i class="fas fa-download"></i></button></a>
       </section>
 
       <!-- posts page -->
       <section id="projects" class="projects-section page">
+        <div class="whitespace"></div>
           <h2 class="projects-title">Projekter</h2>
-        <p class="projects-text"></p>
+        <p class="projects-text">
+          På denne side finder du projekter
+          jeg har arbejdet på.</p>
+          <figure class="projects-figure">
+            <a href="https://draupnir.com/" target="_blank"><img class="projects-img" src="images/draupnir.PNG" alt="draupnir screenshot"></a>
+            <figcaption>Draupnir.com - 2. semester eksamensprojekt som er live på kundens domæne.</figcaption>
+          </figure>
+          <figure class="projects-figure github-figure">
+            <a href="https://github.com/jrKruger89" target="_blank"><img class="projects-img" src="images/github.PNG" alt="github screenshot"></a>
+            <figcaption>Github Repository med skole projekter.</figcaption>
+          </figure>
       </section>
     </main>
     <footer>
@@ -111,6 +127,12 @@
           <a href="mailto:kruger89@hotmail.com"
             ><i class="fas fa-envelope-square"></i
           ></a>
+        </section>
+        <section class="link-section">
+          <a href="https://www.linkedin.com/in/jesper-ring-kr%C3%BCger-9539631b5/" target="_blank">LinkedIn</a>
+          <a href="mailto:kruger89@hotmail.com"
+            >Mail</a>
+          <a href="tel:+4524663536">Telefon</a>
         </section>
       </footer>
     <script src="./js/app.js" type="module"></script>
