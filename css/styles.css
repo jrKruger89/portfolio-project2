@@ -3,7 +3,6 @@
 html,
 body {
   color: #d2d2d2;
-  font-family: "Roboto", sans-serif;
   background: #202020;
   height: 100%;
   width: 100%;
@@ -13,17 +12,20 @@ body {
 
 h2 {
   color: #d2d2d2;
-  font-size: 2.5em;
+  font-size: 2.2em;
   letter-spacing: 0.04em;
+  font-family: "Montserrat", sans-serif;
 }
 
 h3 {
   font-size: 1.4em;
   letter-spacing: 0.04em;
+  font-family: "Montserrat", sans-serif;
 }
 
 p {
   color: #d2d2d2;
+  font-family: "Lato", sans-serif;
   font-size: 1.3em;
   font-weight: 200;
   margin: 0;
@@ -40,6 +42,7 @@ button {
 
 a {
   text-decoration: none;
+  font-family: "Lato", sans-serif;
 }
 
 /*----- Burger -----*/
@@ -263,6 +266,7 @@ main {
 
 figcaption {
   color: #d2d2d2;
+  font-family: "Lato", sans-serif;
   padding: 5px 5px;
 }
 
@@ -340,7 +344,7 @@ footer {
 /*----- Ipad media query -----*/
 @media only screen and (min-device-width: 768px) {
   h2 {
-    font-size: 3.5em;
+    font-size: 3.1em;
   }
   h3 {
     font-size: 1.4em;
@@ -392,7 +396,7 @@ footer {
   }
   .link-section a {
     font-size: 1.4em;
-    font-weight: 600;
+    font-weight: 400;
     color: #da0037;
     text-transform: uppercase;
     margin: 0 20px 0 20px;
