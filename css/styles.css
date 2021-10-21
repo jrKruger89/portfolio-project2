@@ -138,6 +138,10 @@ nav {
 
 /* ---------- main styling ---------- */
 main {
+  background-image: url(../images/background.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -344,13 +348,13 @@ footer {
 /*----- Ipad media query -----*/
 @media only screen and (min-device-width: 768px) {
   h2 {
-    font-size: 3.1em;
+    font-size: 3em;
   }
   h3 {
     font-size: 1.4em;
   }
   p {
-    font-size: 1.3em;
+    font-size: 1.2em;
     margin: 0;
   }
   button {
@@ -364,7 +368,7 @@ footer {
   }
   .read-more-btn {
     height: 50px;
-    width: 130px;
+    width: 150px;
   }
   /*----- About -----*/
   .about-text {
@@ -409,7 +413,7 @@ footer {
 /*----- Desktop media query -----*/
 @media only screen and (min-device-width: 1024px) {
   h2 {
-    font-size: 4.5em;
+    font-size: 4.2em;
   }
   h3 {
     font-size: 1.8em;
@@ -427,7 +431,6 @@ footer {
     display: -ms-flexbox;
     display: flex;
     margin: 0 auto;
-    background: #202020;
     height: calc(100vh - 0);
   }
   /*----- Burger -----*/
