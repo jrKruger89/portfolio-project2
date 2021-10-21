@@ -35,7 +35,7 @@ let displayAge = () => {
 
 let display_about_text =
   /*html*/
-  `Mit navn er <b>Jesper Ring Krüger</b>,
+  `Mit navn er Jesper Ring Krüger,
     jeg er ${displayAge()} år.
     Til daglig er jeg multimediedesign
     studerende og er i gang med mit 3. semester

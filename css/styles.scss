@@ -9,467 +9,469 @@ $primary-font: "Montserrat", sans-serif;
 /* ---------- general styling ---------- */
 html,
 body {
-    color: $header-color;
-    background: $primary-color;
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    padding: 0;
+  color: $header-color;
+  background: $primary-color;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 h2 {
-    color: $header-color;
-    font-size: 2.2em;
-    letter-spacing: 0.04em;
-    font-family: $primary-font;
+  color: $header-color;
+  font-size: 2.2em;
+  letter-spacing: 0.04em;
+  font-family: $primary-font;
 }
 
 h3 {
-    font-size: 1.4em;
-    letter-spacing: 0.04em;
-    font-family: $primary-font;
+  font-size: 1.4em;
+  letter-spacing: 0.04em;
+  font-family: $primary-font;
 }
 
 p {
-    color: $header-color;
-    font-family: $secondary-font;
-    font-size: 1.3em;
-    font-weight: 200;
-    margin: 0;
+  color: $header-color;
+  font-family: $secondary-font;
+  font-size: 1.3em;
+  font-weight: 200;
+  margin: 0;
+  padding: 5px;
+  background-color: rgba($color: $secondary-color, $alpha: 0.2);
 }
 
 button {
-    background-color: $contrast-color;
-    border-radius: 18px;
-    border: 1px solid $contrast-color;
-    color: $header-color;
-    font-size: 1.2em;
-    cursor: pointer;
+  background-color: $contrast-color;
+  border-radius: 18px;
+  border: 1px solid $contrast-color;
+  color: $header-color;
+  font-size: 1.2em;
+  cursor: pointer;
 }
 
 a {
-    text-decoration: none;
-    font-family: $secondary-font;
+  text-decoration: none;
+  font-family: $secondary-font;
 }
 
 /*----- Burger -----*/
 .burger {
-    width: 40px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 15px;
-    cursor: pointer;
+  width: 40px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 15px;
+  cursor: pointer;
 }
 
 .line {
-    background-color: $contrast-color;
-    height: 3px;
-    width: 40px;
-    border-radius: 15px;
-    transition: 0.4s;
+  background-color: $contrast-color;
+  height: 3px;
+  width: 40px;
+  border-radius: 15px;
+  transition: 0.4s;
 }
 
 .line2 {
-    margin: 10px 0 10px 0;
+  margin: 10px 0 10px 0;
 }
 
 /* Rotate first bar */
 .open .line1 {
-    transform: rotate(-45deg) translate(-9px, 10px);
-    background-color: $header-color;
+  transform: rotate(-45deg) translate(-9px, 10px);
+  background-color: $header-color;
 }
 
 /* Fade out the second bar */
 .open .line2 {
-    width: 0px;
-    transform: translateX(-75px);
-    background-color: $header-color;
+  width: 0px;
+  transform: translateX(-75px);
+  background-color: $header-color;
 }
 
 /* Rotate last bar */
 .open .line3 {
-    transform: rotate(45deg) translate(-9px, -9px);
-    background-color: $header-color;
+  transform: rotate(45deg) translate(-9px, -9px);
+  background-color: $header-color;
 }
 
 /*----- Nav Styling -----*/
 nav {
-    background-color: $secondary-color;
-    height: 60px;
-    position: fixed;
-    z-index: 5;
-    top: 0;
-    width: 100%;
+  background-color: $secondary-color;
+  height: 60px;
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  width: 100%;
 }
 
 .nav-list {
-    margin: 0;
-    padding: 20px;
-    background-color: $secondary-color;
-    list-style: none;
-    position: absolute;
-    z-index: 5;
-    transition: all 0.4s;
-    top: 60px;
-    left: -220px;
-    min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+  background-color: $secondary-color;
+  list-style: none;
+  position: absolute;
+  z-index: 5;
+  transition: all 0.4s;
+  top: 60px;
+  left: -220px;
+  min-height: 100vh;
 }
 
 /* Style the links inside the navigation bar */
 .nav-link {
-    color: $contrast-color;
-    font-size: 1.2em;
-    text-transform: uppercase;
-    letter-spacing: 0.3em;
-    margin: 0 0 30px 0;
-    font-weight: 600;
-    text-align: left;
+  color: $contrast-color;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  margin: 0 0 30px 0;
+  font-weight: 600;
+  text-align: left;
 }
 
 .nav-link li {
-    margin: 0 0 30px 0;
+  margin: 0 0 30px 0;
 }
 
 /* Add a color to the active/current link */
 .active {
-    color: $header-color;
-    border-bottom: $header-color 2px solid;
+  color: $header-color;
+  border-bottom: $header-color 2px solid;
 }
 
 /* ---------- main styling ---------- */
 main {
-    background-image: url(../images/background.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    z-index: 1;
-    transition: 0.4s;
+  background-image: url(../images/background.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  transition: 0.4s;
 }
 
 .blur {
-    filter: blur(5px);
+  filter: blur(5px);
 }
 
 /*----- Index Page -----*/
 .profil-section {
-    margin: 140px 0 0 0;
-    width: 300px;
-    display: grid;
+  margin: 140px 0 0 0;
+  width: 300px;
+  display: grid;
 }
 
 .profil-pic {
-    height: 300px;
-    width: 300px;
-    border-radius: 50%;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
 }
 
 .index-title {
-    margin: 15px 0;
-    background-image: url(../images/backgr-texture2.png);
-    background-size: contain;
-    text-align: center;
+  margin: 15px 0;
+  background-image: url(../images/backgr-texture2.png);
+  background-size: contain;
+  text-align: center;
 }
 
 .index-text {
-    font-weight: 100;
-    letter-spacing: 0.05em;
+  font-weight: 100;
+  letter-spacing: 0.05em;
 }
 
 .read-more-btn {
-    height: 40px;
-    width: 110px;
-    margin: 20px 0 120px 0;
+  height: 40px;
+  width: 110px;
+  margin: 20px 0 120px 0;
 }
 
 /* ---------- about styling ---------- */
 .about-section {
-    margin: 140px 0 0 0;
-    width: 300px;
+  margin: 140px 0 0 0;
+  width: 300px;
 }
 
 .about-title {
-    background-image: url(../images/backgr-texture3.png);
-    background-size: contain;
-    text-align: center;
-    margin: 0 0 20px 0;
-    padding-bottom: 2px;
+  background-image: url(../images/backgr-texture3.png);
+  background-size: contain;
+  text-align: center;
+  margin: 0 0 20px 0;
+  padding-bottom: 2px;
 }
 
 .about-text {
-    margin: 0 0 100px 0;
+  margin: 0 0 100px 0;
 }
 
 /* ---------- skills styling ---------- */
 .skills-section {
-    margin: 140px 0 0 0;
-    width: 300px;
+  margin: 140px 0 0 0;
+  width: 300px;
 }
 
 .skills-title {
-    background-image: url(../images/backgr-texture4.png);
-    background-size: contain;
-    text-align: center;
-    margin: 0 0 20px 0;
-    padding-bottom: 2px;
+  background-image: url(../images/backgr-texture4.png);
+  background-size: contain;
+  text-align: center;
+  margin: 0 0 20px 0;
+  padding-bottom: 2px;
 }
 
 .download-btn {
-    height: 40px;
-    width: 125px;
-    margin: 20px 0 120px 0;
+  height: 40px;
+  width: 125px;
+  margin: 20px 0 120px 0;
 }
 
 /* ---------- skills styling ---------- */
 .projects-section {
-    margin: 140px 0 0 0;
-    width: 300px;
+  margin: 140px 0 0 0;
+  width: 300px;
 }
 
 .projects-title {
-    background-image: url(../images/backgr-texture.png);
-    background-size: contain;
-    text-align: center;
-    margin: 0 0 40px 0;
-    padding-bottom: 2px;
+  background-image: url(../images/backgr-texture.png);
+  background-size: contain;
+  text-align: center;
+  margin: 0 0 40px 0;
+  padding-bottom: 2px;
 }
 
 .projects-figure {
-    margin: 40px 0 0 0;
-    border: 1px solid $contrast-color;
-    background: $contrast-color;
-    display: flex;
-    flex-direction: column;
+  margin: 40px 0 0 0;
+  border: 1px solid $contrast-color;
+  background: $contrast-color;
+  display: flex;
+  flex-direction: column;
 }
 
 .projects-img {
-    width: 100%;
+  width: 100%;
 }
 
 .github-figure {
-    margin: 40px 0 80px 0;
+  margin: 40px 0 80px 0;
 }
 
 figcaption {
-    color: $header-color;
-    font-family: $secondary-font;
-    padding: 5px 5px;
+  color: $header-color;
+  font-family: $secondary-font;
+  padding: 5px 5px;
 }
 
 /* ---------- page styling ---------- */
 .page {
-    display: block;
-    animation: fadeIn 0.4s;
+  display: block;
+  animation: fadeIn 0.4s;
 }
 
 .page-title {
-    display: none;
+  display: none;
 }
 
 /* ---------- footer styling ---------- */
 footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: $secondary-color;
-    height: 150px;
-    transition: 0.4s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $secondary-color;
+  height: 150px;
+  transition: 0.4s;
 }
 
 .contact-title {
-    text-align: center;
-    margin: 0 0 15px 0;
-    letter-spacing: 0.08em;
+  text-align: center;
+  margin: 0 0 15px 0;
+  letter-spacing: 0.08em;
 }
 
 .link-section {
-    display: none;
+  display: none;
 }
 
 .icon-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 150px;
-    height: 50px;
-    background-color: $contrast-color;
-    border-radius: 10px;
-    border: 1px solid $contrast-color;
-    padding: 0 8px 0 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 150px;
+  height: 50px;
+  background-color: $contrast-color;
+  border-radius: 10px;
+  border: 1px solid $contrast-color;
+  padding: 0 8px 0 8px;
 }
 
 .fab,
 .fas {
-    font-size: 2em;
-    background-color: $contrast-color;
-    color: $header-color;
+  font-size: 2em;
+  background-color: $contrast-color;
+  color: $header-color;
 }
 
 .fa-download {
-    font-size: 1em;
+  font-size: 1em;
 }
 
 /*----- Ipad media query -----*/
 @media only screen and (min-device-width: 768px) {
-    h2 {
-        font-size: 3em;
-    }
+  h2 {
+    font-size: 3em;
+  }
 
-    h3 {
-        font-size: 1.4em;
-    }
+  h3 {
+    font-size: 1.4em;
+  }
 
-    p {
-        font-size: 1.2em;
-        margin: 0;
-    }
+  p {
+    font-size: 1.2em;
+    margin: 0;
+  }
 
-    button {
-        border-radius: 20px;
-        font-size: 1.3em;
-    }
+  button {
+    border-radius: 20px;
+    font-size: 1.3em;
+  }
 
-    /*----- Index -----*/
-    .profil-pic {
-        height: 400px;
-        width: 400px;
-    }
+  /*----- Index -----*/
+  .profil-pic {
+    height: 400px;
+    width: 400px;
+  }
 
-    .read-more-btn {
-        height: 50px;
-        width: 150px;
-    }
+  .read-more-btn {
+    height: 50px;
+    width: 150px;
+  }
 
-    /*----- About -----*/
-    .about-text {
-        margin: 0 0 150px 0;
-    }
+  /*----- About -----*/
+  .about-text {
+    margin: 0 0 150px 0;
+  }
 
-    /*----- Projects -----*/
+  /*----- Projects -----*/
 
-    .whitespace {
-        height: 180px;
-    }
+  .whitespace {
+    height: 180px;
+  }
 
-    .page {
-        width: 400px;
-        margin: 0;
-    }
+  .page {
+    width: 400px;
+    margin: 0;
+  }
 
-    /* ---------- footer styling ---------- */
-    footer {
-        height: 200px;
-    }
+  /* ---------- footer styling ---------- */
+  footer {
+    height: 200px;
+  }
 
-    .link-section {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 8px 0 8px;
-    }
+  .link-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8px 0 8px;
+  }
 
-    .link-section a {
-        font-size: 1.4em;
-        font-weight: 400;
-        color: $contrast-color;
-        text-transform: uppercase;
-        margin: 0 20px 0 20px;
-    }
+  .link-section a {
+    font-size: 1.4em;
+    font-weight: 400;
+    color: $contrast-color;
+    text-transform: uppercase;
+    margin: 0 20px 0 20px;
+  }
 
-    .icon-section {
-        display: none;
-    }
+  .icon-section {
+    display: none;
+  }
 }
 
 /*----- Desktop media query -----*/
 @media only screen and (min-device-width: 1024px) {
-    h2 {
-        font-size: 4.2em;
-    }
+  h2 {
+    font-size: 4.2em;
+  }
 
-    h3 {
-        font-size: 1.8em;
-    }
+  h3 {
+    font-size: 1.8em;
+  }
 
-    p {
-        font-size: 1.4em;
-        margin: 0;
-    }
+  p {
+    font-size: 1.4em;
+    margin: 0;
+  }
 
-    button {
-        border-radius: 20px;
-        font-size: 1.3em;
-    }
+  button {
+    border-radius: 20px;
+    font-size: 1.3em;
+  }
 
-    main {
-        display: flex;
-        margin: 0 auto;
-        height: calc(100vh - 0);
-    }
+  main {
+    display: flex;
+    margin: 0 auto;
+    height: calc(100vh - 0);
+  }
 
-    /*----- Burger -----*/
-    .burger {
-        display: none;
-    }
+  /*----- Burger -----*/
+  .burger {
+    display: none;
+  }
 
-    /*----- Nav Styling -----*/
+  /*----- Nav Styling -----*/
 
-    nav {
-        width: 100%;
-    }
+  nav {
+    width: 100%;
+  }
 
-    .nav-list {
-        position: static;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        min-height: 60px;
-        width: 600px;
-        padding: 0;
-        margin: 0 auto;
-        background-color: $secondary-color;
-        list-style: none;
-        z-index: 1;
-    }
+  .nav-list {
+    position: static;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 60px;
+    width: 600px;
+    padding: 0;
+    margin: 0 auto;
+    background-color: $secondary-color;
+    list-style: none;
+    z-index: 1;
+  }
 
-    /* Style the links inside the navigation bar */
-    .nav-link {
-        color: $contrast-color;
-        font-size: 1.2em;
-        text-transform: uppercase;
-        letter-spacing: 0.1em;
-        margin: 0;
-        font-weight: 400;
-        text-align: left;
-    }
+  /* Style the links inside the navigation bar */
+  .nav-link {
+    color: $contrast-color;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin: 0;
+    font-weight: 400;
+    text-align: left;
+  }
 
-    .nav-link li {
-        margin: 0;
-    }
+  .nav-link li {
+    margin: 0;
+  }
 
-    .page {
-        width: 600px;
-    }
+  .page {
+    width: 600px;
+  }
 
-    /*----- Index -----*/
+  /*----- Index -----*/
 
-    .profil-pic {
-        height: 450px;
-        width: 450px;
-    }
+  .profil-pic {
+    height: 450px;
+    width: 450px;
+  }
 
-    .pic-div {
-        display: flex;
-        justify-content: center;
-    }
+  .pic-div {
+    display: flex;
+    justify-content: center;
+  }
 
-    /* ---------- about styling ---------- */
-    .about-section {
-        margin: 0 0 50px 0;
-    }
+  /* ---------- about styling ---------- */
+  .about-section {
+    margin: 0 0 50px 0;
+  }
 }
