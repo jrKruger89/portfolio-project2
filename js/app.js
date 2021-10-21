@@ -5,7 +5,6 @@ console.log("Router is running...");
  */
 const burger = document.querySelector(".burger");
 const navlist = document.querySelector(".nav-list");
-const open = document.querySelector(".open");
 const main = document.querySelector("main");
 const footer = document.querySelector("footer");
 
