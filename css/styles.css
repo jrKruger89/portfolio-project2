@@ -27,6 +27,7 @@ p {
   color: #d2d2d2;
   font-family: "Lato", sans-serif;
   font-size: 1.3em;
+  line-height: 1.6em;
   font-weight: 200;
   margin: 0;
   padding: 5px;
@@ -176,7 +177,10 @@ main {
 .profil-pic {
   height: 300px;
   width: 300px;
+  border: 1px solid #202020;
   border-radius: 50%;
+  -webkit-box-shadow: #202020 3px 3px 8px;
+          box-shadow: #202020 3px 3px 8px;
 }
 
 .index-title {
