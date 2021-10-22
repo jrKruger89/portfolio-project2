@@ -3,7 +3,7 @@
 html,
 body {
   color: #d2d2d2;
-  background: #202020;
+  background: #171717;
   height: 100%;
   width: 100%;
   margin: 0;
@@ -434,6 +434,17 @@ footer {
     display: flex;
     margin: 0 auto;
     height: calc(100vh - 0);
+  }
+  /*----- Scroll bar -----*/
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #171717;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: -webkit-gradient(linear, left top, left bottom, from(#171717), color-stop(#da0037), to(#171717));
+    background: linear-gradient(#171717, #da0037, #171717);
   }
   /*----- Burger -----*/
   .burger {
